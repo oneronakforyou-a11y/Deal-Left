@@ -1,0 +1,21 @@
+<%- include('layout', {
+  title: "Products",
+  body: `
+    <section>
+      <h2>Products Page</h2>
+
+      <input type="text" id="searchInput" placeholder="Search product..." style="padding:8px; margin-bottom:15px; width:50%;">
+      
+      <select id="categoryFilter" style="padding:8px; margin-left:10px;">
+        <option value="">All Categories</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Electronics">Electronics</option>
+      </select>
+
+      <div id="productList" style="margin-top:20px;"></div>
+
+      <script src="/js/products.js"></script>
+    </section>
+  `
+}) %>

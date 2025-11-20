@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <%- include('partials/header') %>
+  <%- include('partials/nav') %>
+
+  <main>
+    <h2>Events Page</h2>
+
+    <form action="/events/add" method="POST" style="margin-bottom:20px;">
+      <input type="text" name="title" placeholder="Event Title" required>
+      <input type="text" name="description" placeholder="Description" required>
+      <input type="text" name="date" placeholder="Date" required>
+      <input type="text" name="location" placeholder="Location" required>
+      <button type="submit">Add Event</button>
+    </form>
+
+    <h3>Saved Events:</h3>
+    <ul>
+      <% if (events && events.length > 0) { %>
+        <% events.forEach(e => { %>
+          <li>
+           <li class="event-item">
+  <strong class="event-title"><%= e.title %></strong>
+  <span class="event-info"> - <%= e.date %> - <%= e.location %></span>
+
+
+            <form action="/events/delete/<%= e._id %>" method="POST" style="display:inline;">
+              <button type="submit">Delete</button>
+            </form>
+
+            <a href="/events/edit/<%= e._id %>">
+              <button>Edit</button>
+            </a>
+          </li>
+        <% }) %>
+      <% } else { %>
+        <p>No events added yet.</p>
+      <% } %>
+    </ul>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+</html>
+
+

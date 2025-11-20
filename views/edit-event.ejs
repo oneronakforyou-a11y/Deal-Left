@@ -1,0 +1,14 @@
+<%- include('layout', {
+  title: "Edit Event",
+  body: `
+    <h2>Edit Event</h2>
+
+    <form action="/events/edit/${event._id}" method="POST">
+      <input type="text" name="title" value="${event.title}" required>
+      <input type="text" name="description" value="${event.description}" required>
+      <input type="text" name="date" value="${event.date}" required>
+      <input type="text" name="location" value="${event.location}" required>
+      <button type="submit">Update</button>
+    </form>
+  `
+}) %>

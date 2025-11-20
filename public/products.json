@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Running Sneakers",
+    "price": 1200,
+    "discount": 20,
+    "category": "Fashion",
+    "image": "/images/shoes.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones",
+    "price": 2500,
+    "discount": 30,
+    "category": "Electronics",
+    "image": "/images/headphones.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Casual T-Shirt",
+    "price": 499,
+    "discount": 15,
+    "category": "Fashion",
+    "image": "/images/clothes.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 3500,
+    "discount": 25,
+    "category": "Electronics",
+    "image": "/images/smartwatch.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Laptop Bag",
+    "price": 1400,
+    "discount": 35,
+    "category": "Accessories",
+    "image": "/images/bag.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "price": 1800,
+    "discount": 18,
+    "category": "Electronics",
+    "image": "/images/speaker.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Formal Shoes",
+    "price": 2200,
+    "discount": 28,
+    "category": "Fashion",
+    "image": "/images/formal_shoes.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Sports Bottle",
+    "price": 299,
+    "discount": 10,
+    "category": "Sports",
+    "image": "/images/waterbottle.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Gym Gloves",
+    "price": 399,
+    "discount": 12,
+    "category": "Sports",
+    "image": "/images/gloves.jpg"
+  },
+  {
+    "id": 10,
+    "name": "LED Desk Lamp",
+    "price": 999,
+    "discount": 22,
+    "category": "Home & Kitchen",
+    "image": "/images/lamps.jpg"
+  }
+]
